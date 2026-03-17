@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Yield Prediction</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h1>Yield Prediction</h1>
+
+<form action="/predict_yield" method="post">
+
+Farm Area <input type="number" name="area"><br>
+Fertilizer Used <input type="number" name="fertilizer"><br>
+Pesticide Used <input type="number" name="pesticide"><br>
+Water Usage <input type="number" name="water"><br>
+
+<button type="submit">Predict Yield</button>
+
+</form>
+
+<h2>{{prediction}}</h2>
+
+</body>
+</html>

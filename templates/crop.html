@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Crop Recommendation</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h1>Crop Recommendation</h1>
+
+<form action="/predict_crop" method="post">
+
+N <input type="number" name="N"><br>
+P <input type="number" name="P"><br>
+K <input type="number" name="K"><br>
+Temperature <input type="number" name="temperature"><br>
+Humidity <input type="number" name="humidity"><br>
+PH <input type="number" name="ph"><br>
+Rainfall <input type="number" name="rainfall"><br>
+
+<button type="submit">Predict Crop</button>
+
+</form>
+
+<h2>{{prediction}}</h2>
+
+</body>
+</html>
